@@ -32,8 +32,8 @@ class Bank_account:
             
     
 customer1=Bank_account(first_name='Amina', last_name='Abubakar',bal=2200)
-#customer1.deposit(5000)
-customer1.withraw(2500)
+customer1.deposit(5000)
+print('Welcome',customer1.name() + ' :' + 'The available balance is:', customer1.balance)
+customer1.withraw(2000)
 print('Welcome',customer1.name() + ' :' + 'The available balance is:', customer1.balance)
 
-#print('',customer1.first_name,customer1.last_name, customer1.balance)
