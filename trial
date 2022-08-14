@@ -1,0 +1,8 @@
+SELECT *,
+  CASE
+       WHEN quantity >8  THEN'sufficient'
+       WHEN cost_price >800 THEN 'sufficient'
+       ELSE 'kindly restock'
+  END AS status
+FROM stationary
+ORDER BY cost_price DESC;
